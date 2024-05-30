@@ -385,15 +385,58 @@
                 });
 
         })();
+	
+var counter = 0;
 
     // Add item button functionality.
 	$('#addItemButton').click(function() {
-		var newItem1 = $('<article class="item thumb span-1"><h2>Different.</h2><a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt=""></a></article>');
-        var newItem2 = $('<article class="item thumb span-2"><h2>Ad Infinitum</h2><a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt=""></a></article>');
-        var newItem3 = $('<article class="item thumb span-3"><h2>Kingdom of the Wind</h2><a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a></article>');
-		$('#part1').append(newItem1);
-		$('#part2').append(newItem2);
-		$('#part1').append(newItem3);
+		
+		if(counter > 7)
+		{
+			counter = 0;
+		}
+
+		var firstLane1 = $('<article class="item thumb span-1"><h2>You really got me</h2><a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt=""></a></article>');
+        var firstLane2 = $('<article class="item thumb span-2"><h2>Ad Infinitum</h2><a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt=""></a></article>');
+        var firstLane3 = $('<article class="item thumb span-3"><h2>Kingdom of the Wind</h2><a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a></article>');
+		var secondLane1 = $('<article class="item thumb span-1"><h2>The Pursuit</h2><a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt=""></a></article>');
+		var secondLane2 = $('<article class="item thumb span-2"><h2>Boundless</h2><a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt=""></a></article>');
+		var secondLane3 = $('<article class="item thumb span-3"><h2>Kingdom of the Wind</h2><a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a></article>');
+		
+		if(counter == 0)
+		{
+			$('#part1').append(firstLane1);
+		}
+		else if (counter == 1)
+		{
+			$('#part2').append(secondLane3);
+		}
+		else if (counter == 2)
+		{
+			$('#part1').append(firstLane2);
+		}
+		else if (counter == 3)
+		{
+			$('#part2').append(secondLane1);
+		}
+		else if (counter == 4)
+		{
+			$('#part1').append(firstLane1);
+		}
+		else if (counter == 5)
+		{
+			$('#part2').append(secondLane2);
+		}
+		else if (counter == 6)
+		{
+			$('#part1').append(firstLane3);
+		}
+		else if (counter == 7)
+		{
+			$('#part2').append(secondLane1);
+		}	
+		
+		counter++;
     });
 
 })(jQuery);
