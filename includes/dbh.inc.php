@@ -10,10 +10,3 @@ try {
     echo "Connection failed:" . $e->getMessage();
 }
 
-// Fetch data from the database
-$stmt = $pdo->prepare("SELECT * FROM your_table");
-$stmt->execute();
-$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-// Return data as JSON
-echo json_encode($data);

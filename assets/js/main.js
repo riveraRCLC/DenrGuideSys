@@ -396,7 +396,7 @@
                 counter = 0;
             }
 
-            var firstLane1 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
+            var firstLane1 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form action = "includes/form" class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
             var firstLane2 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
             var firstLane3 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
             var secondLane1 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
