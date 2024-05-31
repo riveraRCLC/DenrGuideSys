@@ -32,16 +32,12 @@ $title = "Parallelism by HTML5 UP";
 									<p>Customer Guide Site<br />
 									</p>
 								</div>
-                                <form class="item-form">
-                                    <input type="text" name="title" placeholder="Enter title" required>
-                                    <img src="images/thumbs/01.jpg" alt=""></a>
-                                    <button type="submit">Save</button>
-                                </form>
+                                
                                 </div>
 
 						<!-- Items Part 2-->
 							<div class="items" id="part2">
-								<article class="item thumb span-3"><h2>Kingdom of the Wind</h2><a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a></article>
+								
 							</div>
 							
 					</section>
