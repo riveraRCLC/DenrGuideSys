@@ -1,3 +1,7 @@
+<?php
+// PHP code to dynamically generate content
+$title = "Parallelism by HTML5 UP";
+?>
 <!DOCTYPE HTML>
 <!--
 	Parallelism by HTML5 UP
@@ -28,16 +32,12 @@
 									<p>Customer Guide Site<br />
 									</p>
 								</div>
-								<article class="item thumb span-1 video">
-									<h2>You really got me</h2>
-									<a href="images/fulls/05.jpg" class="image">
-										<video width="320" height="240" controls>
-											<source src="videos/sample.mp4" type="video/mp4">
-											Your browser does not support the video tag.
-										</video>
-									</a>
-								</article>
-							</div>
+                                <form class="item-form">
+                                    <input type="text" name="title" placeholder="Enter title" required>
+                                    <img src="images/thumbs/01.jpg" alt=""></a>
+                                    <button type="submit">Save</button>
+                                </form>
+                                </div>
 
 						<!-- Items Part 2-->
 							<div class="items" id="part2">
@@ -80,3 +80,4 @@
 
 	</body>
 </html>
+
