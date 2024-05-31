@@ -869,3 +869,27 @@ input, select, textarea {
 				}
 
 		}
+
+
+		.image-container {
+            position: relative;
+            display: inline-block;
+        }
+        .image-container img {
+            display: block;
+        }
+        .item-form {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .item-form input {
+            margin-bottom: 10px;
+        }

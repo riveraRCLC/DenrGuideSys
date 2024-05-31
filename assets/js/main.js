@@ -396,12 +396,13 @@
                 counter = 0;
             }
 
-            var firstLane1 = $('<article class="item thumb span-1"><h2>You really got me</h2><a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt=""></a></article>');
-            var firstLane2 = $('<article class="item thumb span-2"><h2>Ad Infinitum</h2><a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt=""></a></article>');
-            var firstLane3 = $('<article class="item thumb span-3"><h2>Kingdom of the Wind</h2><a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a></article>');
-            var secondLane1 = $('<article class="item thumb span-1"><h2>The Pursuit</h2><a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt=""></a></article>');
-            var secondLane2 = $('<article class="item thumb span-2"><h2>Boundless</h2><a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt=""></a></article>');
-            var secondLane3 = $('<article class="item thumb span-3"><h2>Kingdom of the Wind</h2><a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a></article>');
+            var firstLane1 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
+            var firstLane2 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
+            var firstLane3 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
+            var secondLane1 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
+            var secondLane2 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
+            var secondLane3 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form class="item-form"><input type="text" name="title" placeholder="Enter title" required><button type="submit">Save</button></form></div></div>');
+
             
             if(counter == 0)
             {
