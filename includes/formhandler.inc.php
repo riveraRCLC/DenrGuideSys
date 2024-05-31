@@ -2,4 +2,4 @@
 
 require_once "dbh.inc.php";
 
-$query = "INSERT INTO frame";
+$query = "INSERT INTO frame (frametitle,description,)";

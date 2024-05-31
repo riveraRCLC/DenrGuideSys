@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2024 at 05:29 AM
+-- Generation Time: May 31, 2024 at 06:27 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `content` (
   `id` int(11) NOT NULL,
-  `frameid` int(11) NOT NULL,
-  `content` varchar(50) NOT NULL,
-  `description` varchar(50) NOT NULL,
-  `fileid` int(11) NOT NULL
+  `frameid` int(11) DEFAULT NULL,
+  `content` varchar(50) DEFAULT NULL,
+  `description` varchar(50) DEFAULT NULL,
+  `fileid` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -43,9 +43,9 @@ CREATE TABLE `content` (
 
 CREATE TABLE `filelocation` (
   `id` int(11) NOT NULL,
-  `filename` int(11) NOT NULL,
-  `path` int(11) NOT NULL,
-  `description` int(11) NOT NULL
+  `filename` varchar(50) DEFAULT NULL,
+  `path` varchar(50) DEFAULT NULL,
+  `description` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -56,9 +56,9 @@ CREATE TABLE `filelocation` (
 
 CREATE TABLE `frame` (
   `id` int(11) NOT NULL,
-  `frametitle` varchar(50) NOT NULL,
-  `description` varchar(50) NOT NULL,
-  `frameid` int(11) NOT NULL
+  `frametitle` varchar(50) DEFAULT NULL,
+  `description` varchar(50) DEFAULT NULL,
+  `fileid` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -69,9 +69,9 @@ CREATE TABLE `frame` (
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `role` int(11) NOT NULL
+  `username` varchar(50) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  `role` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
