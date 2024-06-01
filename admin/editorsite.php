@@ -28,29 +28,21 @@
             <!-- Items Part 2-->
             <div class="items" id="part2">
             <div class="item intro span-2">
-                   
+            <button id="addSectionButton">Add Section</button>
                 </div>
             </div>
-
-            
             
         </section>
 
-        <!-- Footer -->
+        <!-- Divider -->
         <section id="footer">
             <section>
                 <p>           </p>
             </section>
             <section>
                 <ul class="icons">
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
                 </ul>
                 <ul class="copyright">
-                    <li>&copy; Untitled</li><li>Design: <a href=" ">other link</a></li>
                 </ul>
             </section>
         </section>
@@ -108,7 +100,21 @@
             console.log('Counter:', counter);
             counter++;
         });
+
+        $(document).on('click', '#addSectionButton', function() {
+            console.log('Button clicked');
+          
+            var firstLane1 = $('<section id="main" > <!-- Items Part 1--><div class="items" id="part1"><div class="item intro span-2"><h1>D.E.N.R.</h1><p>Customer Guide Site<br /></p><button id="addItemButton">Add Frame</button></div></div> <!-- Items Part 2--><div class="items" id="part2"><div class="item intro span-2"><button id="addSectionButton">Add Section</button></div></div> </section>');
+            var divider = $(' <!-- Divider --><section id="footer"><section><p></p></section><section><ul class="icons"></ul><ul class="copyright"></ul></section></section>');
+            $('#wrapper').append(firstLane1);
+            $('#wrapper').append(divider);
+        });
+
+        
+
     });
+
+
 </script>
 </body>
 </html>
