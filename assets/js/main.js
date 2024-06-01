@@ -386,58 +386,6 @@
 
             })();
         
-    var counter = 0;
-
-        // Add item button functionality.
-        $('#addItemButton').click(function() {
             
-            if(counter > 7)
-            {
-                counter = 0;
-            }
-
-            var firstLane1 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form action="includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"> <!-- Adjust the value as needed --><button type="submit">Save</button></form></div>');
-            var firstLane2 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form action="includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"> <!-- Adjust the value as needed --><button type="submit">Save</button></form></div>');
-            var firstLane3 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form action="includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"> <!-- Adjust the value as needed --><button type="submit">Save</button></form></div>');
-            var secondLane1 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form action="includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"> <!-- Adjust the value as needed --><button type="submit">Save</button></form></div>');
-            var secondLane2 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form action="includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"> <!-- Adjust the value as needed --><button type="submit">Save</button></form></div>');
-            var secondLane3 = $('<div class="image-container"><img src="images/thumbs/01.jpg" alt="Thumbnail"><form action="includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"> <!-- Adjust the value as needed --><button type="submit">Save</button></form></div>');
-
-            
-            if(counter == 0)
-            {
-                $('#part1').append(firstLane1);
-            }
-            else if (counter == 1)
-            {
-                $('#part2').append(secondLane3);
-            }
-            else if (counter == 2)
-            {
-                $('#part1').append(firstLane2);
-            }
-            else if (counter == 3)
-            {
-                $('#part2').append(secondLane1);
-            }
-            else if (counter == 4)
-            {
-                $('#part1').append(firstLane1);
-            }
-            else if (counter == 5)
-            {
-                $('#part2').append(secondLane2);
-            }
-            else if (counter == 6)
-            {
-                $('#part1').append(firstLane3);
-            }
-            else if (counter == 7)
-            {
-                $('#part2').append(secondLane1);
-            }	
-            
-            counter++;
-        });
 
     })(jQuery);
