@@ -20,16 +20,21 @@
                 <div class="item intro span-2">
                     <h1>D.E.N.R.</h1>
                     <p>Customer Guide Site<br /></p>
+                    <button id="addItemButton">Add Frame</button>
                 </div>
                 
             </div>  
 
             <!-- Items Part 2-->
-            <div class="items" id="part2"></div>
+            <div class="items" id="part2">
+            <div class="item intro span-2">
+                   
+                </div>
+            </div>
 
+            
+            
         </section>
-
-        <button id="addItemButton">Add Item</button>
 
         <!-- Footer -->
         <section id="footer">
@@ -62,47 +67,48 @@
 
     <!-- Custom Script -->
     <script>
-        var counter = 0;
+    var counter = 0;
 
-        $(document).ready(function() {
-            console.log('jQuery is loaded');
+    $(document).ready(function() {
+        console.log('jQuery is loaded');
 
-            $('#addItemButton').click(function() {
-                console.log('Button clicked');
-                
-                if (counter > 7) {
-                    counter = 0;
-                }
+        // Use event delegation to handle clicks on dynamically created buttons
+        $(document).on('click', '#addItemButton', function() {
+            console.log('Button clicked');
+            
+            if (counter > 7) {
+                counter = 0;
+            }
 
-                var firstLane1 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div>');
-                var firstLane2 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div>');
-                var firstLane3 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div>');
-                var secondLane1 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div>');
-                var secondLane2 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div>');
-                var secondLane3 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div>');
+            var firstLane1 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div> <button id="addItemButton">Add Frame</button>');
+            var firstLane2 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div> <button id="addItemButton">Add Frame</button>');
+            var firstLane3 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div> <button id="addItemButton">Add Frame</button>');
+            var secondLane1 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div> <button id="addItemButton">Add Frame</button>');
+            var secondLane2 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div> <button id="addItemButton">Add Frame</button>');
+            var secondLane3 = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div> <button id="addItemButton">Add Frame</button>');
 
-                if (counter == 0) {
-                    $('#part1').append(firstLane1);
-                } else if (counter == 1) {
-                    $('#part2').append(secondLane3);
-                } else if (counter == 2) {
-                    $('#part1').append(firstLane2);
-                } else if (counter == 3) {
-                    $('#part2').append(secondLane1);
-                } else if (counter == 4) {
-                    $('#part1').append(firstLane1);
-                } else if (counter == 5) {
-                    $('#part2').append(secondLane2);
-                } else if (counter == 6) {
-                    $('#part1').append(firstLane3);
-                } else if (counter == 7) {
-                    $('#part2').append(secondLane1);
-                } 
+            if (counter == 0) {
+                $('#part1').append(firstLane1);
+            } else if (counter == 1) {
+                $('#part2').append(secondLane3);
+            } else if (counter == 2) {
+                $('#part1').append(firstLane2);
+            } else if (counter == 3) {
+                $('#part2').append(secondLane1);
+            } else if (counter == 4) {
+                $('#part1').append(firstLane1);
+            } else if (counter == 5) {
+                $('#part2').append(secondLane2);
+            } else if (counter == 6) {
+                $('#part1').append(firstLane3);
+            } else if (counter == 7) {
+                $('#part2').append(secondLane1);
+            } 
 
-                console.log('Counter:', counter);
-                counter++;
-            });
+            console.log('Counter:', counter);
+            counter++;
         });
-    </script>
+    });
+</script>
 </body>
 </html>

@@ -36,16 +36,13 @@ $title = "Parallelism by HTML5 UP";
 								</div>
 								
 							</div>	
-
+							<button id="addItemButton">Add Frame</button>
 						<!-- Items Part 2-->
 							<div class="items" id="part2">
 								
 							</div>
 							
 					</section>
-
-					<button id="addItemButton">Add Item</button>
-
 
 				<!-- Footer -->
 					<section id="footer">
@@ -69,13 +66,12 @@ $title = "Parallelism by HTML5 UP";
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>		
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/main.js"></script>		
 	</body>
 </html>
 
