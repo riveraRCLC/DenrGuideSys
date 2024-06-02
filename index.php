@@ -36,7 +36,6 @@ $title = "Parallelism by HTML5 UP";
 								</div>
 								
 							</div>	
-							<button id="addItemButton">Add Frame</button>
 						<!-- Items Part 2-->
 							<div class="items" id="part2">
 								
