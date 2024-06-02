@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2024 at 06:27 AM
+-- Generation Time: Jun 02, 2024 at 07:12 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -58,8 +58,17 @@ CREATE TABLE `frame` (
   `id` int(11) NOT NULL,
   `frametitle` varchar(50) DEFAULT NULL,
   `description` varchar(50) DEFAULT NULL,
-  `fileid` int(11) DEFAULT NULL
+  `fileid` int(11) DEFAULT NULL,
+  `file_path` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `frame`
+--
+
+INSERT INTO `frame` (`id`, `frametitle`, `description`, `fileid`, `file_path`) VALUES
+(4, 'asf', 'asdf', 1, '../storage/images/WIN_20231105_19_58_49_Pro.jpg'),
+(5, 'IDONTKNKNOW', 'asdf', 1, '../storage/videos/League of Legends (TM) Client 2024-02-13 01-31-18.mp4');
 
 -- --------------------------------------------------------
 
@@ -110,7 +119,7 @@ ALTER TABLE `filelocation`
 -- AUTO_INCREMENT for table `frame`
 --
 ALTER TABLE `frame`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user`
