@@ -74,7 +74,17 @@
                 counter = 0;
             }
 
-            var frame = $('<div class="image-container"><img src="../images/thumbs/01.jpg" alt="Thumbnail"><form action="../includes/formhandler.inc.php" method="post" class="item-form"><input type="text" name="frametitle" placeholder="Enter title" required><input type="text" name="description" placeholder="Enter description" required><input type="hidden" name="fileid" value="1"><button type="submit">Save</button></form></div>');
+            var frame = $(`
+                        <div class="image-container"> <img src="../images/thumbs/01.jpg" alt="Thumbnail">
+                            <form action="../includes/formhandler.inc.php" method="post" class="item-form" enctype="multipart/form-data">
+                                <input type="text" name="frametitle" placeholder="Enter title" required>
+                                <input type="text" name="description" placeholder="Enter description" required>
+                                <input type="hidden" name="fileid" value="1">
+                                <input type="file" name="media" accept="image/*,video/*,.ppt,.pptx" required>
+                                <button type="submit">Save</button>
+                            </form>
+                        </div>
+                        `);
 
             if (counter % 2 === 0) {
                 $(`#main[data-section="${sectionId}"] #part1`).append(frame);
