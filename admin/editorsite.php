@@ -75,7 +75,7 @@
             }
 
             var frame = $(`
-                        <div class="image-container"> <img src="../images/thumbs/01.jpg" alt="Thumbnail">
+                        <div class="image-container"> <img src="../images/thumbs/09.jpg" alt="Thumbnail">
                             <form action="../includes/formhandler.inc.php" method="post" class="item-form" enctype="multipart/form-data">
                                 <input type="text" name="frametitle" placeholder="Enter title" required>
                                 <input type="text" name="description" placeholder="Enter description" required>
