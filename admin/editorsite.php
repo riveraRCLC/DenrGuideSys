@@ -9,6 +9,16 @@
 </head>
 <body class="is-preload">
 
+   <!-- Border -->
+   <section id="footer">
+            <section>
+                <p></p>
+            </section>
+            <section>
+                
+            </section>
+        </section>
+
     <!-- Wrapper -->
     <div id="wrapper">
 
